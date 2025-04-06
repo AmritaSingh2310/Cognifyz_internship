@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz - Interactive Website</title>
+</head>
+
+<body style="background-color: lightblue; text-align: center;">
+    <div>
+        <h1 style="color: darkblue; font-size: 56px;">Welcome to Cognifyz</h1>
+        <h2 style="color: darkred; font-size: 45px;">Where Data Meets Intelligence</h2>
+        <p style="font-size: 36px; color: black;">This is a basic webpage created using HTML.</p>
+        <img src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png" alt="Sample Image" width="200">
+    </div><br>
+
+    <button id="changeColorBtn" style="color: rgb(10, 10, 10); height: 35px; width: 260px; background-color: rgb(255, 136, 0); border-radius: 10px; font-size: 16px;">Change Background Color</button>
+
+    <script>
+        document.getElementById("changeColorBtn").addEventListener("click", function () {
+            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
