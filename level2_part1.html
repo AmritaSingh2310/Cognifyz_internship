@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* 🌍 Global Styles */
+body {
+    background: url("https://png.pngtree.com/background/20210709/original/pngtree-blue-simple-solid-color-background-color-picture-image_908417.jpg");
+    font-family: Arial, sans-serif;
+    background-position: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 🔷 Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: rgb(12, 12, 12);
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 0.5cm;
+    display: inline;
+}
+
+.nav-links a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center/cover;
+    color: rgb(8, 8, 8);
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: rgb(2, 46, 71);
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgb(2, 56, 107);
+}
+
+.hero button {
+    background: #92d8f8;
+    color: rgb(7, 7, 7);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* 📦 Content Boxes */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-top: 10%;
+    
+}
+
+.box {
+    position: bottom;
+    width: 30%;
+    padding: 20px;
+    background: #56d7f7;
+    border-radius: 5px;
+}
+
+/* 📱 Responsive Design */
+
+/* 🔹 Tablet View */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
+
+/* 🔹 Mobile View */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><img src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png" alt="Sample Image" width="200" >
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <header class="hero">
+        <h1>Where Data Meets Intelligence</h1>
+        <p>Building smarter solutions with AI and Data Science.</p>
+        <div>Get Started</div>
+    </header>
+
+    
+    <section class="content">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </section>
+
+</body>
+</html>
